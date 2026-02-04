@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Little Bites Bakery - Freshly baked goods in Malejor-Accra. Artisan breads, pastries, cakes, and cookies made daily with love.">
+    <title>Little Bites Bakery | Fresh Baked Goods in Malejor-Accra</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Dancing+Script:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <i class="fas fa-birthday-cake"></i>
+                    <span>Little Bites <span class="logo-highlight">Bakery</span></span>
+                </a>
+                
+                <button class="mobile-menu-btn" aria-label="Toggle menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+                
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#products" class="nav-link">Products</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                    <li><a href="#order" class="btn btn-primary">Order Now</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">Freshly Baked with Love</h1>
+                    <p class="hero-subtitle">Artisan breads, pastries, and cakes made daily in Malejor-Accra</p>
+                    <p class="hero-location"><i class="fas fa-map-marker-alt"></i> Located at Malejor-Accra, off Dodowa Road</p>
+                    <div class="hero-buttons">
+                        <a href="#products" class="btn btn-primary btn-large">View Our Products</a>
+                        <a href="#order" class="btn btn-secondary btn-large">Order Now</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                         alt="Freshly baked breads and pastries on display" 
+                         width="800" 
+                         height="600">
+                </div>
+            </div>
+        </section>
+
+        <!-- Products Section -->
+        <section id="products" class="products">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Our Fresh Baked Goods</h2>
+                    <p class="section-subtitle">Made fresh daily with the finest ingredients</p>
+                </div>
+                
+                <div class="products-grid">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                                 alt="Freshly baked croissants" 
+                                 width="600" 
+                                 height="400">
+                        </div>
+                        <div class="product-content">
+                            <h3>Butter Croissants</h3>
+                            <p class="product-description">Flaky, buttery croissants baked fresh every morning</p>
+                            <div class="product-price">GH₵ 15.00</div>
+                            <button class="btn btn-outline add-to-cart" data-product="Butter Croissants" data-price="15.00">Add to Order</button>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                                 alt="Chocolate cake with frosting" 
+                                 width="600" 
+                                 height="400">
+                        </div>
+                        <div class="product-content">
+                            <h3>Chocolate Cake</h3>
+                            <p class="product-description">Rich chocolate cake with creamy chocolate frosting</p>
+                            <div class="product-price">GH₵ 45.00</div>
+                            <button class="btn btn-outline add-to-cart" data-product="Chocolate Cake" data-price="45.00">Add to Order</button>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                                 alt="Fresh artisan bread" 
+                                 width="600" 
+                                 height="400">
+                        </div>
+                        <div class="product-content">
+                            <h3>Artisan Bread</h3>
+                            <p class="product-description">Crusty sourdough bread made with natural fermentation</p>
+                            <div class="product-price">GH₵ 25.00</div>
+                            <button class="btn btn-outline add-to-cart" data-product="Artisan Bread" data-price="25.00">Add to Order</button>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                                 alt="Assorted cookies" 
+                                 width="600" 
+                                 height="400">
+                        </div>
+                        <div class="product-content">
+                            <h3>Assorted Cookies</h3>
+                            <p class="product-description">Freshly baked chocolate chip, oatmeal, and sugar cookies</p>
+                            <div class="product-price">GH₵ 10.00</div>
+                            <button class="btn btn-outline add-to-cart" data-product="Assorted Cookies" data-price="10.00">Add to Order</button>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1568254183919-78a4f43a2877?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                                 alt="Cinnamon rolls" 
+                                 width="600" 
+                                 height="400">
+                        </div>
+                        <div class="product-content">
+                            <h3>Cinnamon Rolls</h3>
+                            <p class="product-description">Soft cinnamon rolls with cream cheese frosting</p>
+                            <div class="product-price">GH₵ 20.00</div>
+                            <button class="btn btn-outline add-to-cart" data-product="Cinnamon Rolls" data-price="20.00">Add to Order</button>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1571115764595-644a1f56a55c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                                 alt="Fruit tarts" 
+                                 width="600" 
+                                 height="400">
+                        </div>
+                        <div class="product-content">
+                            <h3>Fruit Tarts</h3>
+                            <p class="product-description">Seasonal fruit tarts with vanilla custard filling</p>
+                            <div class="product-price">GH₵ 30.00</div>
+                            <button class="btn btn-outline add-to-cart" data-product="Fruit Tarts" data-price="30.00">Add to Order</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-text">
+                        <h2 class="section-title">Our Story</h2>
+                        <p>Little Bites Bakery was founded in 2015 by Sarah Mensah, a passionate baker who turned her love for baking into a thriving business in Malejor-Accra.</p>
+                        <p>What started as a small home-based operation has grown into a beloved neighborhood bakery, known for its fresh, high-quality baked goods made with love and attention to detail.</p>
+                        <p>We believe in using only the finest ingredients, sourcing locally whenever possible, and baking everything fresh daily. Our mission is to bring joy to our community through delicious baked goods.</p>
+                        <div class="about-features">
+                            <div class="feature">
+                                <i class="fas fa-leaf"></i>
+                                <span>Fresh Ingredients</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-heart"></i>
+                                <span>Made with Love</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-clock"></i>
+                                <span>Baked Daily</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-users"></i>
+                                <span>Community Focused</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-image">
+                        <img src="https://images.unsplash.com/photo-1583394838336-acd977736f90?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                             alt="Sarah Mensah, owner of Little Bites Bakery" 
+                             width="600" 
+                             height="800">
+                        <div class="owner-info">
+                            <h4>Sarah Mensah</h4>
+                            <p>Founder & Head Baker</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Get In Touch</h2>
+                    <p class="section-subtitle">Have questions? We'd love to hear from you</p>
+                </div>
+                
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Visit Our Bakery</h3>
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <h4>Location</h4>
+                                    <p>Malejor-Accra, off Dodowa Road<br>Accra, Ghana</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <i class="fas fa-clock"></i>
+                                <div>
+                                    <h4>Opening Hours</h4>
+                                    <p>Monday - Friday: 7:00 AM - 7:00 PM</p>
+                                    <p>Saturday: 8:00 AM - 6:00 PM</p>
+                                    <p>Sunday: 9:00 AM - 4:00 PM</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <i class="fas fa-phone"></i>
+                                <div>
+                                    <h4>Phone</h4>
+                                    <p>+233 123 456 789</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <h4>Email</h4>
+                                    <p>hello@littlebitesbakery.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form">
+                        <h3>Send Us a Message</h3>
+                        <form id="contactForm" action="https://formspree.io/f/{your-form-id}" method="POST">
+                            <div class="form-group">
+                                <input type="text" id="contactName" name="name" placeholder="Your Name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <input type="email" id="contactEmail" name="email" placeholder="Email Address" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <textarea id="contactMessage" name="message" placeholder="Your Message" rows="5" required></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Order Section -->
+        <section id="order" class="order">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Place Your Order</h2>
+                    <p class="section-subtitle">Order your favorite baked goods for pickup or delivery</p>
+                </div>
+                
+                <div class="order-content">
+                    <div class="order-form">
+                        <h3>Order Form</h3>
+                        <form id="orderForm" action="https://formspree.io/f/{your-form-id}" method="POST">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <input type="text" id="orderName" name="name" placeholder="Full Name" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <input type="email" id="orderEmail" name="email" placeholder="Email Address" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <input type="tel" id="orderPhone" name="phone" placeholder="Phone Number" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="orderProducts">Select Products</label>
+                                <div class="product-selection">
+                                    <div class="product-option">
+                                        <input type="checkbox" id="product1" name="products[]" value="Butter Croissants">
+                                        <label for="product1">Butter Croissants - GH₵ 15.00</label>
+                                    </div>
+                                    <div class="product-option">
+                                        <input type="checkbox" id="product2" name="products[]" value="Chocolate Cake">
+                                        <label for="product2">Chocolate Cake - GH₵ 45.00</label>
+                                    </div>
+                                    <div class="product-option">
+                                        <input type="checkbox" id="product3" name="products[]" value="Artisan Bread">
+                                        <label for="product3">Artisan Bread - GH₵ 25.00</label>
+                                    </div>
+                                    <div class="product-option">
+                                        <input type="checkbox" id="product4" name="products[]" value="Assorted Cookies">
+                                        <label for="product4">Assorted Cookies - GH₵ 10.00</label>
+                                    </div>
+                                    <div class="product-option">
+                                        <input type="checkbox" id="product5" name="products[]" value="Cinnamon Rolls">
+                                        <label for="product5">Cinnamon Rolls - GH₵ 20.00</label>
+                                    </div>
+                                    <div class="product-option">
+                                        <input type="checkbox" id="product6" name="products[]" value="Fruit Tarts">
+                                        <label for="product6">Fruit Tarts - GH₵ 30.00</label>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="orderQuantity">Quantity</label>
+                                    <select id="orderQuantity" name="quantity" required>
+                                        <option value="" disabled selected>Select Quantity</option>
+                                        <option value="1">1 item</option>
+                                        <option value="2-5">2-5 items</option>
+                                        <option value="6-10">6-10 items</option>
+                                        <option value="10+">More than 10 items</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="orderType">Order Type</label>
+                                    <select id="orderType" name="order_type" required>
+                                        <option value="" disabled selected>Select Option</option>
+                                        <option value="pickup">Pickup</option>
+                                        <option value="delivery">Delivery</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="orderInstructions">Special Instructions</label>
+                                <textarea id="orderInstructions" name="instructions" placeholder="Any allergies, dietary restrictions, or special requests..." rows="3"></textarea>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="orderDate">Preferred Pickup/Delivery Date</label>
+                                <input type="date" id="orderDate" name="date" required>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary btn-full">Place Order</button>
+                        </form>
+                    </div>
+                    
+                    <div class="order-info">
+                        <h3>Order Information</h3>
+                        <div class="info-card">
+                            <i class="fas fa-shipping-fast"></i>
+                            <h4>Delivery Options</h4>
+                            <p>Free delivery within Malejor-Accra for orders over GH₵ 100</p>
+                        </div>
+                        
+                        <div class="info-card">
+                            <i class="fas fa-clock"></i>
+                            <h4>Order Timing</h4>
+                            <p>Please place orders at least 24 hours in advance for custom cakes</p>
+                        </div>
+                        
+                        <div class="info-card">
+                            <i class="fas fa-credit-card"></i>
+                            <h4>Payment Methods</h4>
+                            <p>We accept cash, mobile money, and bank transfers</p>
+                        </div>
+                        
+                        <div class="info-card">
+                            <i class="fas fa-phone"></i>
+                            <h4>Need Help?</h4>
+                            <p>Call us at +233 123 456 789 for urgent orders</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <a href="index.html" class="logo">
+                        <i class="fas fa-birthday-cake"></i>
+                        <span>Little Bites <span class="logo-highlight">Bakery</span></span>
+                    </a>
+                    <p>Freshly baked goods made with love in Malejor-Accra. Visit us off Dodowa Road for the best pastries in town!</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#order">Order Online</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Our Products</h4>
+                    <ul class="footer-links">
+                        <li><a href="#products">Breads</a></li>
+                        <li><a href="#products">Pastries</a></li>
+                        <li><a href="#products">Cakes</a></li>
+                        <li><a href="#products">Cookies</a></li>
+                        <li><a href="#products">Special Orders</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-map-marker-alt"></i> Malejor-Accra, off Dodowa Road</li>
+                        <li><i class="fas fa-phone"></i> +233 123 456 789</li>
+                        <li><i class="fas fa-envelope"></i> hello@littlebitesbakery.com</li>
+                        <li><i class="fas fa-clock"></i> Mon-Fri: 7am-7pm, Sat: 8am-6pm, Sun: 9am-4pm</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Little Bites Bakery. All rights reserved.  | <a href="https://levi1894.city/">Built by Levi.</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Notification -->
+    <div class="notification" id="notification">
+        <div class="notification-content">
+            <span id="notificationMessage"></span>
+            <button class="notification-close">&times;</button>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
