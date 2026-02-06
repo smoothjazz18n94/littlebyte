@@ -254,4 +254,15 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
+
 });
+function sendOrderToWhatsApp() {
+  const phoneNumber = "233241234567"; // REPLACE with your real WhatsApp number
+
+  const message = "Hello, I want to place an order.";
+
+  window.open(
+    `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`,
+    "_blank"
+  );
+}
